@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="./index.js" async></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <header class = "header">
+        <h2 class = "title">Library</h2>
+    </header>
+    <!-- Side Info Navigation  -->
+    <div class = "sidenav">
+
+    </div>
+    <button class="book-button" id = "myBtn">+</button>
+    <!-- Modal Form Popup -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <form id = "myForm" class="form">
+          <h3 class = "modal-title">Add A New Book</h3>
+          <label for="title">Title</label>
+          <input type="text" id="title" name="firstname" placeholder="Your book title here.">
+      
+          <label for="author">Author</label>
+          <input type="text" id="author" name="lastname" placeholder="Your author">
+
+          <label for="author">Total Pages</label>
+          <input type="text" id="author" name="lastname" placeholder="Total Pages Read">
+
+          <label for="author">Completed Pages</label>
+          <input type="text" id="author" name="lastname" placeholder="Completed Pages Read">
+      
+          <input id ="submit-form-button"type="submit" value="Submit" >
+          <input class="cancel-button" type="submit" value="Cancel">
+        </form> 
+      </div>
+    
+    </div>
+    <!-- <div id = "main">
+      <input id = "title" type = "text" placeholder="title"/> 
+      <input id = "author" type = "text" placeholder="author"/> 
+      <input id = "pages" type = "text" placeholder="pages"/> 
+      <input id = "year" type = "text" placeholder="year"/> 
+      <input id = "read" type = "text" placeholder="read"/> 
+      <input type = "button" value = "Add" onclick="addBookToLibrary()"/> -->
+    </div>
+</body>
+</html>

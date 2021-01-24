@@ -1,0 +1,159 @@
+/* #main {
+  background-color: aqua;
+  display: flex;
+  width: 80%;
+  
+  flex-direction: column;
+} */
+
+body { 
+  margin: 0;
+  /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(41, 13, 13)); */
+}
+.modal-title {
+  text-align: center;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  border-radius: 5px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#title {
+  /* background-color: black; */
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  background-color: #FEF5D1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.header {
+  padding: 20px;
+  text-align: left;
+  background: #001c71;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.book-button {
+  width:100px;
+  height:100px;
+  display:inline-block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:50px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #07526e;
+  padding-top:6px;
+  margin-top: 20px;;
+  margin-left:auto;
+  margin-right:auto;
+  left:30px;
+  position:relative;
+  cursor:pointer;
+  border: none;
+  background: #007aff;
+  /* need to change the colour */
+  background-image: linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 10px 5px #999;
+}
+
+.book-button:active {
+  top:3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px #999;
+}
+.book-button:before {
+  font-family: 'socialfont';
+  font-size: 50px;
+  line-height: 1em;
+  font-weight: normal;
+  width:85px;
+  height:90px;
+  display:block;
+  position:absolute;
+  padding-top:10px;
+  top:10px;
+  text-shadow: 1px 1px 2px #07526e;
+
+}
+
+.book-button:active:before {
+  top: 7px;
+  font-size: 50px;
+  text-shadow: 0px 3px 0px #07526e, 0px 5px 1px #07526e/*, 3px 0px 1px #07526e, 3px 3px 1px #07526e,
+     -2px 0px 1px #68cff2*/;
+}
+
+
+#title, #author {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
